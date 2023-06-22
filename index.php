@@ -9,7 +9,7 @@ $loggedIn = isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'];
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Blog</title>
+    <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>

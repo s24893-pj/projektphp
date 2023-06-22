@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Sprawdzenie, czy użytkownik jest zalogowany
 $loggedIn = isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'];
 
 ?>
@@ -9,12 +8,12 @@ $loggedIn = isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'];
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Blog</title>
+    <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 <nav>
-    <div class="nav-title">My Blog</div>
+    <div class="nav-title">Moje Wpisy</div>
     <ul>
         <li><button onclick="location.href='index.php'">Strona Główna</button></li>
         <?php if (!$loggedIn) { ?>

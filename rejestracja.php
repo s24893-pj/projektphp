@@ -10,12 +10,12 @@ $loggedIn = isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'];
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Blog</title>
+    <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 <nav>
-    <div class="nav-title">My Blog</div>
+    <div class="nav-title">Rejestracja</div>
     <ul>
         <li><button onclick="location.href='index.php'">Strona Główna</button></li>
         <?php if (!$loggedIn) { ?>
@@ -79,7 +79,7 @@ $conn->close();
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Registration</h2>
+<h2>Rejestracja</h2>
 <form action="" method="post">
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username" required><br>
